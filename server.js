@@ -1,7 +1,7 @@
 const noblox = require('noblox.js');
 const express = require('express');
 const API = express();
-const port = 3000
+const port = 8080
 require('dotenv').config()
 
 API.get("/", async (request, response) => {
