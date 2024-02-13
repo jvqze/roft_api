@@ -1,7 +1,6 @@
 const noblox = require('noblox.js');
 const express = require('express');
 const API = express();
-const port = 8080
 require('dotenv').config()
 
 API.get("/", async (request, response) => {
@@ -30,7 +29,7 @@ async function LoginRoblox() {
     console.log(`Logged in as ${currentUser.UserName} [${currentUser.UserID}]`)
 }
 
-API.listen(port, () => {
-    console.log(`Listening on port ${port}`)
+API.listen(process.env.PORT, () => {
+    console.log(`Listening on port ${process.env.PORT}`)
     LoginRoblox()
 })
