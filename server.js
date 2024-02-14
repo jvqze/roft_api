@@ -19,7 +19,7 @@ API.get("/whitelist/:id", async (request, response) => {
     }).catch((err) => {
         response.send({
             status: 404,
-            message: toString(err)
+            message: err
         })
     })
 })
