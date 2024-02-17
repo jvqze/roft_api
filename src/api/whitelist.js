@@ -12,6 +12,10 @@ router.get('/:id', async (req, res) => {
 
   await noblox.buy(params.id).then(() => {
 
+    const header = {
+      "Content-Type": "application/json",
+    }
+
     var embed = {
       author: {
         name: `⚠ New Whitelisted Map ⚠`
@@ -22,7 +26,7 @@ router.get('/:id', async (req, res) => {
 
     fetch(process.env.WEBHOOK, {
       method: "POST",
-      headers: ('Content-type', 'application/json'),
+      headers: header,
       body: JSON.stringify({
         embeds: [embed]
       }),
