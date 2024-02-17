@@ -7,7 +7,7 @@ router.get('/:id', async (req, res) => {
   const query = req.query;
 
   function hexToDecimal(hex) {
-    return parseInt(hex.replace("#",""), 16)
+    return parseInt(hex.replace("#", ""), 16)
   }
 
   await noblox.buy(params.id).then(() => {
@@ -20,13 +20,13 @@ router.get('/:id', async (req, res) => {
       color: hexToDecimal("#d1ab6a")
     }
 
-    const requests = new XMLHttpRequest();
-    requests.open("POST", process.env.WEBHOOK)
-    requests.setRequestHeader('Content-type', 'application/json')
-
-    request.send(JSON.stringify({
-      embeds: [ embed ]
-    }));
+    fetch(process.env.WEBHOOK, {
+      method: "POST",
+      headers: ('Content-type', 'application/json'),
+      body: JSON.stringify({
+        embeds: [embed]
+      }),
+    })
 
     res.send({
       status: 200,
