@@ -9,6 +9,6 @@ async function LoginRoblox() {
 }
 
 app.listen(port, () => {
-  console.log(`Listening under Port ${port}`);
+  console.log(`Listening on Port ${port}`);
   LoginRoblox()
 });
