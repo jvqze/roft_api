@@ -1,5 +1,5 @@
 # Welcome
 
-If you're seeing this, that means you're a Developer for Running Out of Time. Hiiii, this is how I made the API and it's usage, this is only supposed to be explicitly only to be seen for Developers only.
+This project is now discontinued and will not be used anymore, this was my first time using API for a Roblox game, so yeah! Hopefully if this game does come back, I'll code it again!
 
 <a href="https://www.digitalocean.com/?refcode=19a3078e4ffe&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" /></a>
